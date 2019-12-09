@@ -1,7 +1,10 @@
 {
   "name": "MyAppNS",
   "nativescript": {
-    "id": "org.nativescript.MyAppNS"
+    "id": "org.nativescript.MyAppNS",
+    "tns-android": {
+      "version": "6.2.0"
+    }
   },
   "version": "0.0.0",
   "scripts": {
