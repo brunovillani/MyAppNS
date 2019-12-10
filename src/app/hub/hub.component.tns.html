@@ -1,0 +1,15 @@
+<ActionBar title="Hub Page" class="action-bar"></ActionBar>
+
+<ScrollView class="page">
+    <StackLayout>
+        <StackLayout class="description-text home-panel">
+            <Label [text]="description" textWrap="true"></Label>
+        </StackLayout>
+        <StackLayout class="home-panel">
+            <Button class="btn btn-primary" text="Link to feature page" [nsRouterLink]="['/feature']"></Button>
+            <Button class="btn btn-primary" text="Link to browse page" [nsRouterLink]="['/browse']"></Button>
+            <Button class="btn btn-primary" text="Link to search page" [nsRouterLink]="['/search']"></Button>
+            <Button class="btn btn-primary" text="Link to shop page" [nsRouterLink]="['/shop']"></Button>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>

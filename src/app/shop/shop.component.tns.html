@@ -1,0 +1,15 @@
+<ActionBar title="Shop Page" class="action-bar"></ActionBar>
+
+<ScrollView class="page">
+    <StackLayout>
+        <StackLayout class="description-text home-panel">
+            <Label [text]="description" textWrap="true"></Label>
+        </StackLayout>
+        <StackLayout class="home-panel">
+            <!-- <Button class="btn btn-primary" text="Link to shop item page" [nsRouterLink]="['./shop-item']"></Button>
+            <Button class="btn btn-primary" text="Link to shop section page" [nsRouterLink]="['./shop-section']"></Button> -->
+            <Button class="btn btn-primary" text="Link to shop item page" (tap)="goToItem()"></Button>
+            <Button class="btn btn-primary" text="Link to shop section page" (tap)="goToSection()"></Button>
+        </StackLayout>
+    </StackLayout>
+</ScrollView>
