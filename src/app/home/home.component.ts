@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { LayoutService } from '../shared/services/layout.services';
+import { TabItem } from '../shared/Models';
 
 @Component({
   selector: 'app-home',
@@ -6,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  title = 'MyAppNS';
+  title = 'MyHome';
 
-  constructor() { }
+  tabItems: TabItem[] = [
+    { text: 'home1' },
+    { text: 'home2' },
+    { text: 'home3' },
+  ];
+  constructor(public layoutService: LayoutService) { }
 
   ngOnInit() {
   }

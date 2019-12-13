@@ -1,0 +1,17 @@
+<RadSideDrawer #drawerComponent tkExampleTitle tkToggleNavButton class="drawer">
+    <GridLayout tkDrawerContent rows="auto, *" class="drawer-side">
+        <StackLayout class="side-title">
+            <Label text="Navigation Menu"></Label>
+        </StackLayout>
+        <ScrollView row="1">
+            <StackLayout>
+                <Label *ngFor="let item of items" [text]="item.text" (tap)="navigateTo(item.link)"
+                    class="side-label"></Label>
+                <Label text="Close Drawer" class="side-label centered" (tap)="onCloseDrawerTap()"></Label>
+            </StackLayout>
+        </ScrollView>
+    </GridLayout>
+    <StackLayout tkMainContent class="drawer-content">
+        <ng-content></ng-content>
+    </StackLayout>
+</RadSideDrawer>

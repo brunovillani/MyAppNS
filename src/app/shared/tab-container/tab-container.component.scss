@@ -1,0 +1,16 @@
+@import '../../../app-variables';
+
+.tab-item {
+    background-color: $pale-green-color;
+    margin: 30px;
+
+    .tab-label {
+        font-size: large;
+        background-color: $grey-color;
+    }
+}
+
+.centered {
+    vertical-align: center;
+    horizontal-align: center;
+}

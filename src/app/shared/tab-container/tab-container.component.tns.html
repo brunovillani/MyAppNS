@@ -1,0 +1,13 @@
+<Tabs selectedIndex="0" tabsPosition="position">
+    <TabStrip>
+        <TabStripItem *ngFor="let item of tabItems" class="tab-item">
+            <Label [text]="item.text" class="tab-label"></Label>
+        </TabStripItem>
+    </TabStrip>
+
+    <TabContentItem *ngFor="let item of tabItems">
+        <StackLayout class="centered">
+            <Label [text]="item.text"></Label>
+        </StackLayout>
+    </TabContentItem>
+</Tabs>
