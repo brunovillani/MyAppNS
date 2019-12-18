@@ -8,6 +8,7 @@ import { AboutComponent } from '@src/app/about/about.component';
 import { SharedModule } from './shared/shared.module.tns';
 import { NativeScriptUISideDrawerModule } from 'nativescript-ui-sidedrawer/angular/side-drawer-directives';
 
+import { KinveyModule } from 'kinvey-nativescript-sdk/angular';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from 'nativescript-angular/forms';
@@ -25,7 +26,12 @@ import { NativeScriptUISideDrawerModule } from 'nativescript-ui-sidedrawer/angul
     NativeScriptModule,
     NativeScriptUISideDrawerModule,
     AppRoutingModule,
-    SharedModule.forRoot()
+    SharedModule.forRoot(),
+    KinveyModule.init({
+      appKey: 'kid_ry_Pqz7TB',
+      appSecret: '5e7fe51769c3493d8b6aaf3080abfa4c',
+      instanceId: 'cnr-us1'
+    })
   ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]

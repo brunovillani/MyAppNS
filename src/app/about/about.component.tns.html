@@ -1,5 +1,7 @@
 <app-page-container [title]="title">
     <StackLayout>
         <Label text="Welcome to {{ title }}!" class="h1 text-center" textWrap="true"></Label>
+        <Button text="Ping Kinvey" (tap)="pingKinvey()"></Button>
+        <Label [text]="pingResponse"></Label>
     </StackLayout>
 </app-page-container>
